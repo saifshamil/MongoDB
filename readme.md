@@ -106,3 +106,20 @@ db.students.updateOne(
   {name:"saif"},
   {$set:{name:"shamil"}}
 )
+
+ updateMany :- 
+
+db.students.updateMany()
+
+13- felied Delete :-
+
+  db.students.updateOne(
+    {name : "shamil"},
+    {$unset:{city:""}}
+  )
+
+  14- Document Delete
+  
+  db.students.deleteOne(
+    {name:"asif"}
+  )
